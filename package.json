@@ -24,6 +24,7 @@
   "homepage": "https://github.com/iliaivanov/tallinn-soiduplaan-data#readme",
   "devDependencies": {},
   "dependencies": {
+    "axios": "^0.15.3",
     "fs": "0.0.1-security"
   }
 }
