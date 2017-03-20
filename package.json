@@ -1,6 +1,6 @@
 {
   "name": "tallinn-soiduplaan-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple node.js library to fetch Tallinn public transportation data.",
   "main": "index.js",
   "scripts": {
