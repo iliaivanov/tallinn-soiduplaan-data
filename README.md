@@ -39,10 +39,10 @@ tsp.getCachedData().then((data) => {
 });
 
 tsp.cachier.loadCachedFiles(true).then((data) => {
-	console.log(data);
-	console.log(data.stops);
-	console.log(data.routes);
+    console.log(data);
+    console.log(data.stops);
+    console.log(data.routes);
 }, (error) => {
-	console.log(error);
+    console.log(error);
 });
 ```
