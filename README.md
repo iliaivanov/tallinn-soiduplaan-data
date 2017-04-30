@@ -1,5 +1,5 @@
 # Tallinn soiduplaan data fetcher
-Simple node.js library to fetch Tallinn public transportation data.   
+Simple node.js library to fetch [Tallinn public transportation data](soiduplaan.tallinn.ee).   
 
 This library will fetch text-format data from soiduplaan.tallinn.ee and parse it using source javascript code (see lib/original-source).   
 
