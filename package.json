@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "fs-promise": "^2.0.2"
   }
 }
