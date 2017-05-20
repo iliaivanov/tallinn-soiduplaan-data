@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const config = require(path.join(__dirname, '/../config/config'));
-const cachier = require(config.libDirPath + '/cachier');
-const legacySource = require(config.libDirPath + '/original-source/souduplaan.tallinn.source');
+const cachier = require(config.srcDirPath + '/cachier');
+const legacySource = require(config.srcDirPath + '/original-source/souduplaan.tallinn.source');
 
 let globalData = [];
 let stops = [];

@@ -1,14 +1,14 @@
 const path = require('path');
 
 let basePath =  path.join(__dirname, '/..');
-let libDirPath = basePath + '/lib';
+let srcDirPath = basePath + '/src';
 let dataBaseRoute = "http://soiduplaan.tallinn.ee";
 let files = ['stops', 'routes', 'gps'];
 
 module.exports = {
 	dataBaseRoute,
 	basePath,
-	libDirPath,
+	srcDirPath,
 	routes: {
 		stops: `${dataBaseRoute}/data/stops.txt`,
         routes: `${dataBaseRoute}/data/routes.txt`,

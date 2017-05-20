@@ -6,7 +6,7 @@ const path = require('path');
 const fsp = require('fs-promise');
 
 const config = require(path.join(__dirname, '/../config/config'));
-const fsHelper = require(config.libDirPath + '/helpers/fileSystemHelper');
+const fsHelper = require(config.srcDirPath + '/helpers/fileSystemHelper');
 
 const files = config.files;
 const cacheDir = config.dirs.cache;

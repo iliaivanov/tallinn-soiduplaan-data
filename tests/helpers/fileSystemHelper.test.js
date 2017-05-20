@@ -6,7 +6,7 @@ chai.use(chaiAsPromised);
 
 const {createTestFile, cleanUpTestFile} = require('./../seed/filesSeeder');
 const config = require('./../../config/config');
-const fsHelper = require(`${config.libDirPath}/helpers/fileSystemHelper`);
+const fsHelper = require(`${config.srcDirPath}/helpers/fileSystemHelper`);
 
 let testFile = `${__dirname}/../tmp/test-file.js`;
 
