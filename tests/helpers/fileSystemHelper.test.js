@@ -10,45 +10,25 @@ const fsHelper = require(`${config.libDirPath}/helpers/fileSystemHelper`);
 
 let testFile = `${__dirname}/../tmp/test-file.js`;
 
-beforeEach(createTestFile);
-afterEach(cleanUpTestFile);
+beforeEach('create test tmp file', createTestFile);
+afterEach('clean up test tmp file', cleanUpTestFile);
 
 describe('File system helpers', function() {
 
     it('should check item exists', function(done) {
         fsHelper.checkItemExists(testFile).should.eventually.equal(true).notify(done);
-
-        // With expect lib it will be:
-        // fsHelper.checkItemExists(testFile).then((result) => {
-        //     expect(result).toBe(true);
-        //     done();
-        // }).catch((err) => {            
-        //     done(err);
-        // });
     });
 
     it('should clean up file', function(done) {
         fsHelper.cleanupFile(testFile).should.eventually.equal(true).notify(createTestFile).notify(done);
-
-        // With expect lib it will be:
-        // fsHelper.cleanupFile(testFile).then(() => {
-        //     createTestFile();
-        //     done();
-        // }).catch((err) => {
-        //     done(err);
-        // });
     });
 
     it('get file content', function(done) {
         fsHelper.getFileContent(testFile).should.eventually.equal('dummy').notify(done);
+    });
 
-        // With expect lib it will be:
-        // fsHelper.getFileContent(testFile).then((content) => {
-        //     content.should.equal('dummy');
-        //     done();
-        // }).catch((err) => {
-        //     done(err);
-        // });
+    it.skip('skip this test', function () {
+      // will be skiped.  
     });
     
 });
