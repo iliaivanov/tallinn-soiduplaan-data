@@ -13,9 +13,9 @@ let testFile = `${__dirname}/../tmp/test-file.js`;
 beforeEach(createTestFile);
 afterEach(cleanUpTestFile);
 
-describe('File system helpers', () => {
+describe('File system helpers', function() {
 
-    it('should check item exists', (done) => {
+    it('should check item exists', function(done) {
         fsHelper.checkItemExists(testFile).should.eventually.equal(true).notify(done);
 
         // With expect lib it will be:
@@ -27,7 +27,7 @@ describe('File system helpers', () => {
         // });
     });
 
-    it('should clean up file', (done) => {
+    it('should clean up file', function(done) {
         fsHelper.cleanupFile(testFile).should.eventually.equal(true).notify(createTestFile).notify(done);
 
         // With expect lib it will be:
@@ -39,7 +39,7 @@ describe('File system helpers', () => {
         // });
     });
 
-    it('get file content', (done) => {
+    it('get file content', function(done) {
         fsHelper.getFileContent(testFile).should.eventually.equal('dummy').notify(done);
 
         // With expect lib it will be:
@@ -50,5 +50,5 @@ describe('File system helpers', () => {
         //     done(err);
         // });
     });
-
+    
 });
