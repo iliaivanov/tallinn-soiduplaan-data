@@ -8,9 +8,6 @@ const cachier = require(config.srcDirPath + '/cachier');
 const legacySource = require(config.srcDirPath + '/original-source/souduplaan.tallinn.source');
 
 let globalData = [];
-let stops = [];
-let routs = [];
-let gps = [];
 let cacheDir = config.dirs.cache;
 
 /**

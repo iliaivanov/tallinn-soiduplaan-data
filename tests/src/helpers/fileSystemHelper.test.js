@@ -1,14 +1,14 @@
-const chai = require("chai");
+const chai = require('chai');
 const should = chai.should();
-const chaiAsPromised = require("chai-as-promised");
+const chaiAsPromised = require('chai-as-promised');
  
 chai.use(chaiAsPromised);
 
-const {createTestFile, cleanUpTestFile} = require('./../seed/filesSeeder');
-const config = require('./../../config/config');
+const {createTestFile, cleanUpTestFile} = require('./../../seed/filesSeeder');
+const config = require('./../../../config/config');
 const fsHelper = require(`${config.srcDirPath}/helpers/fileSystemHelper`);
 
-let testFile = `${__dirname}/../tmp/test-file.js`;
+let testFile = `${__dirname}/../../tmp/test-file.js`;
 
 beforeEach('create test tmp file', createTestFile);
 afterEach('clean up test tmp file', cleanUpTestFile);
